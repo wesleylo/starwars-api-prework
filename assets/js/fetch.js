@@ -1,7 +1,7 @@
 var curr_film = 0;
 
-document.getElementById("btn-next").addEventListener("click", next);
 document.getElementById("btn-prev").addEventListener("click", prev);
+document.getElementById("btn-next").addEventListener("click", next);
 
 fetchFilm(curr_film);
 
