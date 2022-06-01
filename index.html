@@ -20,9 +20,6 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -37,7 +34,7 @@
         <span>StarWars API Pre-Work</span>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="github"><i class="bi bi-github"></i></i></a>
+        <a href="https://github.com/wesleylo/starwars-api-prework" class="github"><i class="bi bi-github"></i></i></a>
       </div>
     </div>
   </section>
@@ -47,14 +44,14 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Star Wars: Episode I - <span>The Phantom Menace</span></h1>
-      <h5>Director: George Lucas</h5>
-      <h5>Producer: Gary Kurtz, Rick McCallum</h5>
-      <h5>Release Date: 1977-05-25</h5>
-      <span>It is a period of civil war.\r\nRebel spaceships, striking\r\nfrom a hidden base, have won\r\ntheir first victory against\r\nthe evil Galactic Empire.\r\n\r\nDuring the battle, Rebel\r\nspies managed to steal secret\r\nplans to the Empire's\r\nultimate weapon, the DEATH\r\nSTAR, an armored space\r\nstation with enough power\r\nto destroy an entire planet.\r\n\r\nPursued by the Empire's\r\nsinister agents, Princess\r\nLeia races home aboard her\r\nstarship, custodian of the\r\nstolen plans that can save her\r\npeople and restore\r\nfreedom to the galaxy....</span>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Previous Film</a>
-        <a href="#about" class="btn-get-started scrollto">Next Film</a>
+      <h1>Star Wars: Episode <span id="episode_id">1</span> - <span id="episode_title">The Phantom Menace</span></h1>
+      <h5>Director: <span id="director">George Lucas</span></h5>
+      <h5>Producer(s): <span id="producer">Gary Kurtz, Rick McCallum</span></h5>
+      <h5>Release Date: <span id="release_date">1977-05-25</span></h5>
+      <span id="opening_crawl">Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute. Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo. While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict....</span>
+      <div class="d-flex film-nav">
+        <a class="btn-film-nav" id="btn-prev">Previous Film</a>
+        <a class="btn-film-nav" id="btn-next">Next Film</a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -139,7 +136,7 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Wesley Lo</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><a href="www.github.com/wesleylo"><span>Wesley Lo</span></a></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -154,7 +151,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/fetch.js"></script>
 
 </body>
 
